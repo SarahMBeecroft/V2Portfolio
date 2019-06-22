@@ -1,0 +1,32 @@
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../images/mountains.jpg);
+  height: 360px;
+  text-align: center;
+  color: white; 
+}
+
+header {
+  position: relative; 
+  top: 45px;
+  text-shadow: 1.5px 1.5px slategrey;
+}
+
+.display-4 {
+  font-family: 'Crete Round', serif;
+  font-size: 85px;
+}
+
+.lead {
+  font-size: 25px;
+}
+
+#button {
+  float: right;
+  position: relative; 
+  top: 80px;
+}
