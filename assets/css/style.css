@@ -4,7 +4,7 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-  background-image: url(../images/mountains.jpg);
+  background-image: url(../images/space.jpg);
   height: 360px;
   text-align: center;
   color: white; 
@@ -12,21 +12,94 @@ body {
 
 header {
   position: relative; 
-  top: 45px;
-  text-shadow: 1.5px 1.5px slategrey;
+  top: 40px;
 }
 
 .display-4 {
   font-family: 'Crete Round', serif;
-  font-size: 85px;
+  font-size: 90px;
+}
+
+/* Text underline hover effect */
+.display-4:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.display-4:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .lead {
-  font-size: 25px;
+  font-size: 30px;
+  position: relative; 
+  bottom: 20px;
 }
 
 #button {
+  padding: 5px 15px 5px 15px;
   float: right;
   position: relative; 
-  top: 80px;
+  top: 45px;
+
+}
+
+
+
+
+/* Footer */
+/* Styles footer and fixes it to bottom */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0a083c;
+  height: 70px;
+}
+  
+#github {
+  height: 30px;
+  width: auto;
+  margin-top: 20px;
+}
+
+#github:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#linkedin {
+  height: 30px;
+  width: auto;
+  margin-top: 20px;
+}
+
+#linkedin:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#twitter {
+  height: 30px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#twitter:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.logos {
+  margin: 0px 0px 50px 626px;
 }
