@@ -1,10 +1,15 @@
-.clearfix {
-  overflow: auto;
-}
-
 body {
   font-family: 'Assistant', sans-serif;
   color: #484e58;
+}
+
+/* Prevents links from showing up as blue */
+a {
+  color: inherit;
+}
+
+hr {
+  width: 80%;
 }
 
 /* Jumbotron */
@@ -31,7 +36,7 @@ header {
   bottom: 0;
   content: "";
   display: block;
-  height: 1.5px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -146,11 +151,9 @@ h5 {
 .portfolioImage {
   width: 100%;
   max-width: 420px;
-  height: auto;
+  height: 250px;
   opacity: 0.75;
   overflow: hidden;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   transition-timing-function: ease-in;
   transition: 1.5s;
 }
