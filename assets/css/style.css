@@ -1,3 +1,7 @@
+.clearfix {
+  overflow: auto;
+}
+
 body {
   font-family: 'Assistant', sans-serif;
   color: #484e58;
@@ -71,7 +75,7 @@ header {
   display: inline-block;
 }
 
-img:hover {
+#profilePic:hover {
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
@@ -103,6 +107,63 @@ h2 {
   color: #eed9e7;
   text-shadow: .5px .5px #b892a7;
   margin: 30px 0px 0px 65px;
+}
+
+
+/* Portfolio */
+h5 {
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#portfolioHeader {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  margin-left: 40px;
+}
+
+.row1 .row2 {
+  margin-top: 2.5%;
+}
+
+.box {
+  max-width: 400px;
+  max-height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box1 .box2 .box3 .box4 .box5 .box6 {
+  background-color: black;
+}
+
+.portfolioImage {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  opacity: 0.75;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition-timing-function: ease-in;
+  transition: 1.5s;
+}
+
+.portfolioImage:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-timing-function: ease-in;
+  transition: 1s;
 }
 
 
