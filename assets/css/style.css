@@ -177,6 +177,19 @@ h5 {
 }
 
 
+/* Skill section styling */
+#doughnut,#doughnut2,#doughnut3,#doughnut4{
+  position: absolute;
+}
+#skill1,#skill2,#skill3,#skill4{
+  position: relative;
+}
+
+#skillsHeader {
+  font-family: 'Crete Round', serif;
+  font-size: 25px;
+}
+
 /* Contact form styling */
 .contactform {
   padding: 40px 140px 80px 140px;
