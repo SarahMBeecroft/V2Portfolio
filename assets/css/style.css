@@ -93,6 +93,8 @@ header {
   font-family: 'Crete Round', serif;
   font-size: 40px;
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #aboutMe {
@@ -169,6 +171,39 @@ h5 {
   transition: 1s;
 }
 
+
+/* Contact form styling */
+.contactform {
+  padding: 40px 140px 80px 140px;
+  margin-bottom: 40px;
+}
+  
+/* Styles the text boxes in the form */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid #dddddd; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;  
+}
+  
+/* Styles the "submit button" */
+input[type=submit] {
+  background-color: #484e58;
+  color: white;
+  padding: 10px 35px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  margin-bottom: 50px;
+  font-size: 18px;
+  border-radius: 5%;
+}
+  
+/* When moving the mouse over the submit button, add a darker grey color */
+input[type=submit]:hover {
+  background-color: grey;
+}
 
 
 /* Footer */
