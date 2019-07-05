@@ -8,13 +8,14 @@ a {
   color: inherit;
 }
 
+/* Shortens divider width */
 hr {
   width: 80%;
 }
 
 /* Jumbotron */
 .jumbotron {
-  background-image: url(../images/space.jpg);
+  background-image: url(../images/mountains.jpg);
   height: 360px;
   text-align: center;
   color: white; 
@@ -59,13 +60,15 @@ header {
   float: right;
   position: relative; 
   top: 45px;
+  right: 40px;
   color: white;
   background-color: #484e58;
 }
 
 #emailAddress {
-  font-size: 20px;
-  
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
 }
 
 
@@ -137,7 +140,7 @@ h5 {
 
 .container-fluid {
   margin: 0 auto;
-  margin-left: 40px;
+  padding-left: 70px;
 }
 
 .row1 .row2 {
@@ -227,12 +230,12 @@ input[type=submit]:hover {
 /* Footer */
 /* Styles footer and fixes it to bottom */
 .footer {
-  background-image: url(../images/space.jpg);
+  background-image: url(../images/flippedmountains.jpg);
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 85px;
+  height: 75px;
   text-align: center;
   z-index: 100;
 }
@@ -240,7 +243,7 @@ input[type=submit]:hover {
 #github {
   height: 30px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0px 20px 0px 15px;
 }
 
@@ -252,7 +255,7 @@ input[type=submit]:hover {
 #linkedin {
   height: 30px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0px 15px 0px 15px;
 }
 
@@ -264,7 +267,7 @@ input[type=submit]:hover {
 #twitter {
   height: 34px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0px 15px 0px 15px;
 }
 
@@ -279,6 +282,5 @@ input[type=submit]:hover {
 
 .copyright {
   color: white;
-  font-size: 10px;
-  margin-top: 10px;
+  font-size: 15px;
 }
