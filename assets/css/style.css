@@ -283,5 +283,6 @@ input[type=submit]:hover {
 
 .copyright {
   color: white;
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 5px;
 }
