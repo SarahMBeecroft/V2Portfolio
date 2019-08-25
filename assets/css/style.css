@@ -1,7 +1,45 @@
 body {
   font-family: 'Assistant', sans-serif;
   color: #484e58;
+  margin: 0;
+  padding: 0;
 }
+
+
+/* Border hover effect for header */
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	  margin: 0 auto;
+  width: 320px;  
+  cursor: none;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #a81047;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 6px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+
 
 /* Prevents links from showing up as blue */
 a {
@@ -13,10 +51,34 @@ hr {
   width: 80%;
 }
 
+/* Creates left to right underline effect on links */
+.link {
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 0; height: 1.5px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #a81047;
+  transition: width .3s ease;
+  -webkit-transition: width .3s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #a81047;
+}
+
+
 /* Jumbotron */
 .jumbotron {
-  background-image: url(../images/mountains.jpg);
-  height: 360px;
+  background-color: black;
+  height: 280px;
   text-align: center;
   color: white; 
 }
@@ -27,30 +89,12 @@ header {
 }
 
 .display-4 {
-  font-family: 'Crete Round', serif;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 90px;
 }
 
-/* Text underline hover effect */
-.display-4:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.2s ease 0s, left 0.2s ease 0s;
-  width: 400px;
-
-}
-.display-4:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
 .lead {
+  font-family: 'Fjalla One', sans-serif;
   font-size: 30px;
   position: relative; 
   bottom: 15px;
@@ -63,7 +107,7 @@ header {
   top: 45px;
   right: 40px;
   color: white;
-  background-color: #484e58;
+  background-color: #a81047;
 }
 
 #emailAddress {
@@ -231,7 +275,7 @@ input[type=submit]:hover {
 /* Footer */
 /* Styles footer and fixes it to bottom */
 .footer {
-  background-image: url(../images/flippedmountains.jpg);
+  background-color: black;
   position: fixed;
   left: 0;
   right: 0;
