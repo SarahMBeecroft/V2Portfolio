@@ -8,6 +8,22 @@ body {
   overflow-y: scroll;
 }
 
+/* Nav bar */
+.navbar {
+  background-color: #484e58 !important;
+  height: 40px;
+}
+
+.nav-link {
+  font-family: 'Assistant', sans-serif;
+  color: white !important;
+  font-size: 19px;
+}
+
+.nav-link:hover {
+  background-color: #a81047;
+}
+
 /* Border hover effect for header */
 .svg-wrapper {
   position: relative;
@@ -23,7 +39,7 @@ body {
   stroke-width: 8px;
   fill: transparent;
   stroke: #a81047;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #a81047;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
@@ -31,12 +47,11 @@ body {
   font-size: 30px;
   line-height: 32px;
   letter-spacing: 6px;
-  color: #fff;
   top: -48px;
   position: relative;
 }
 .svg-wrapper:hover .shape {
-  stroke-width: 2px;
+  stroke-width: 5px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
 }
@@ -83,33 +98,10 @@ hr {
   margin-top: 20px;
 }
 
-/* Creates left to right underline effect on links */
-.link {
-  position: relative;
-}
-
-.link:after {
-  content: '';
-  position: absolute;
-  width: 0; height: 1.5px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: #a81047;
-  transition: width .3s ease;
-  -webkit-transition: width .3s ease;
-}
- 
-.link:hover:after{
-  width: 100%;
-  left: 0;
-  background: #a81047;
-}
-
-
 /* Jumbotron */
 .fillIn {
   background-color: black;
+  border-bottom: solid 6px #484e58;
 }
 
 .jumbotron {
@@ -201,27 +193,24 @@ header {
 
 
 /* About section styling */
+.aboutMe {
+  padding: 60px 0px 60px 0px;
+}
+
 /* Profile photo */
 #profilePic {
-  width: 180px;
+  width: 200px;
   height: auto;
   border-radius: 15px 50px;
   border-top-style:double;
   border-bottom-style:double;
-  padding-top:5px;
-  padding-bottom:5px;
   border-top-color: #a81047;
   border-bottom-color: #484e58;
   border-top-width:8px;
   border-bottom-width:8px;
 }
 
-#picContainer {
- text-align: center;
-}
-
 #pic {
-  margin-top: 20px;
   display: inline-block;
 }
 
@@ -229,54 +218,31 @@ header {
   border-radius: 15px 50px;
   border-top-style:double;
   border-bottom-style:double;
-  padding-top:5px;
-  padding-bottom:5px;
   border-bottom-color: #a81047;
   border-top-color: #484e58;
   border-top-width:8px;
   border-bottom-width:8px;
-}
-
-#centerHeader {
-  text-align: center;
-}
-
-#aboutMeHeader {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 28px;
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#aboutMe {
-  text-align: center;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 .bio {
   font-size: 18px;
+  margin-top: 30px;
 }
-
-h2 {
-  font-family: 'Bilbo Swash Caps', cursive;
-  font-size: 50px;
-  background: white;
-  color: #eed9e7;
-  text-shadow: .5px .5px #b892a7;
-  margin: 30px 0px 0px 65px;
-}
-
 
 /* Portfolio */
+#portfolioHeader {
+  font-family: 'Fjalla One', sans-serif;
+  color: #484e58;
+  font-size: 28px;
+  padding: 60px 0px 60px 0px;
+  text-align: center;
+}
+
 h5 {
   font-family: 'Crete Round', serif;
   font-size: 20px;
-  display: inline-block;
-}
-
-#portfolioHeader {
-  font-family: 'Crete Round', serif;
-  font-size: 40px;
   display: inline-block;
 }
 
@@ -380,6 +346,7 @@ input[type=submit]:hover {
   height: 75px;
   text-align: center;
   z-index: 100;
+  border-top: solid 6px #484e58;
 }
   
 #github {
@@ -427,3 +394,5 @@ input[type=submit]:hover {
   font-size: 12px;
   margin-top: 5px;
 }
+
+
