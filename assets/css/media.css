@@ -1,0 +1,29 @@
+
+
+
+/* Portfolio */
+@media (max-width: 900px) {
+  .formatPortfolio1 {
+    left: 0px;
+  }
+  
+  .formatPortfolio2 {
+    right: 0px;
+  }
+}
+
+@media (max-width: 1235px) {
+  .formatPortfolio1 {
+    left: 10px;
+  }
+  
+  .formatPortfolio2 {
+    right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  h5 {
+    margin-top: 10px;
+  }
+}

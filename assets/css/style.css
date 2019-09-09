@@ -241,14 +241,15 @@ header {
 }
 
 h5 {
-  font-family: 'Crete Round', serif;
+  font-family: 'Fjalla One', sans-serif;
+  color: #484e58;
   font-size: 20px;
   display: inline-block;
 }
 
 .container-fluid {
   margin: 0 auto;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .row1 .row2 {
@@ -256,10 +257,18 @@ h5 {
 }
 
 .box {
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 350px;
+  max-height: 200px;
   overflow: hidden;
   cursor: pointer;
+}
+
+.formatPortfolio1 {
+  left: 60px;
+}
+
+.formatPortfolio2 {
+  right: 60px;
 }
 
 .box1 .box2 .box3 .box4 .box5 .box6 {
@@ -268,7 +277,7 @@ h5 {
 
 .portfolioImage {
   width: 100%;
-  max-width: 420px;
+  max-width: 350px;
   height: 250px;
   opacity: 0.75;
   overflow: hidden;
