@@ -17,7 +17,7 @@ body {
 .nav-link {
   font-family: 'Assistant', sans-serif;
   color: white !important;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .nav-link:hover {
@@ -298,49 +298,27 @@ h5 {
 
 
 /* Skill section styling */
-#doughnut,#doughnut2,#doughnut3,#doughnut4{
+#doughnut,#doughnut2,#doughnut3,#doughnut4,#doughnut5 {
   position: absolute;
 }
-#skill1,#skill2,#skill3,#skill4{
+#skill1,#skill2,#skill3,#skill4,#skill5 {
   position: relative;
 }
 
 #skillsHeader {
-  font-family: 'Crete Round', serif;
-  font-size: 25px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #484e58;
+  font-size: 28px;
+  padding: 60px 0px 60px 0px;
+  text-align: center;
 }
 
-/* Contact form styling */
-.contactform {
-  padding: 40px 140px 80px 140px;
-  margin-bottom: 40px;
-}
-  
-/* Styles the text boxes in the form */
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 10px; 
-  border: 1px solid #dddddd; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px;  
-}
-  
-/* Styles the "submit button" */
-input[type=submit] {
-  background-color: #484e58;
-  color: white;
-  padding: 10px 35px;
-  border: 1px solid #dddddd;
-  cursor: pointer;
-  margin-bottom: 50px;
-  font-size: 18px;
-  border-radius: 5%;
-}
-  
-/* When moving the mouse over the submit button, add a darker grey color */
-input[type=submit]:hover {
-  background-color: grey;
+#skillHeader {
+  font-family: 'Fjalla One', sans-serif;
+  color: #484e58;
+  font-size: 26px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
 }
 
 

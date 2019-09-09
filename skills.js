@@ -1,7 +1,7 @@
 //draw the doughnut
-var doughnutArray = [document.getElementById('doughnut').getContext('2d'), document.getElementById('doughnut2').getContext('2d'), document.getElementById('doughnut3').getContext('2d'), document.getElementById('doughnut4').getContext('2d')];
+var doughnutArray = [document.getElementById('doughnut').getContext('2d'), document.getElementById('doughnut2').getContext('2d'), document.getElementById('doughnut3').getContext('2d'), document.getElementById('doughnut4').getContext('2d'), document.getElementById('doughnut5').getContext('2d')];
 for (var i = 0; i < doughnutArray.length; i++) {
-  doughnutArray[i].lineWidth = 5; //thickness of the line
+  doughnutArray[i].lineWidth = 10; //thickness of the line
   doughnutArray[i].fillStyle = '#eaeaea';
   doughnutArray[i].strokeStyle = "#eaeaea";
   doughnutArray[i].beginPath();
@@ -13,6 +13,7 @@ window.onload = function() {
     loadSkills2();
     loadSkills3();
     loadSkills4();
+    loadSkills5();
   }
   /*Load skills one function*/
 function loadSkills1() {
@@ -26,11 +27,11 @@ function loadSkills1() {
   function progressSim() {
     diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2); //change the arc by multiplying .. * Math.PI*2* --> 7.5=75, 5=50 etc.
     ctx.clearRect(0, 0, cw, ch);
-    ctx.lineWidth = 5; //thickness of the line
-    ctx.fillStyle = '#002a7c';
-    ctx.strokeStyle = "#002a7c";
+    ctx.lineWidth = 10; //thickness of the line
+    ctx.fillStyle = '#a81047';
+    ctx.strokeStyle = "#a81047";
     ctx.textAlign = 'center';
-    ctx.font = "30px Radley";
+    ctx.font = "30px Assistant";
     ctx.fillText(al + '%', cw * .5 + 2, ch * .5 + 8, cw);
     ctx.beginPath();
     ctx.arc(60, 60, 55, start, diff / 10 + start, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
@@ -55,11 +56,11 @@ function loadSkills2() {
   function progressSim() {
     diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2); //change the arc by multiplying .. * Math.PI*2* --> 7.5=75, 5=50 etc.
     ctx.clearRect(0, 0, cw, ch);
-    ctx.lineWidth = 5; //thickness of the line
-    ctx.fillStyle = '#002a7c';
-    ctx.strokeStyle = "#002a7c";
+    ctx.lineWidth = 10; //thickness of the line
+    ctx.fillStyle = '#a81047';
+    ctx.strokeStyle = "#a81047";
     ctx.textAlign = 'center';
-    ctx.font = "30px Radley";
+    ctx.font = "30px Assistant";
     ctx.fillText(al + '%', cw * .5 + 2, ch * .5 + 8, cw);
     ctx.beginPath();
     ctx.arc(60, 60, 55, start, diff / 10 + start, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
@@ -85,11 +86,11 @@ function loadSkills3() {
   function progressSim() {
     diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2); //change the arc by multiplying .. * Math.PI*2* --> 7.5=75, 5=50 etc.
     ctx.clearRect(0, 0, cw, ch);
-    ctx.lineWidth = 5; //thickness of the line
-    ctx.fillStyle = '#002a7c';
-    ctx.strokeStyle = "#002a7c";
+    ctx.lineWidth = 10; //thickness of the line
+    ctx.fillStyle = '#a81047';
+    ctx.strokeStyle = "#a81047";
     ctx.textAlign = 'center';
-    ctx.font = "30px Radley";
+    ctx.font = "30px Assistant";
     ctx.fillText(al + '%', cw * .5 + 2, ch * .5 + 8, cw);
     ctx.beginPath();
     ctx.arc(60, 60, 55, start, diff / 10 + start, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
@@ -102,6 +103,7 @@ function loadSkills3() {
   }
   var sim = setInterval(progressSim, 40); //speed
 }
+
 /* loadSkill4 function*/
 function loadSkills4() {
   var ctx = document.getElementById('skill4').getContext('2d');
@@ -114,16 +116,46 @@ function loadSkills4() {
   function progressSim() {
     diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2); //change the arc by multiplying .. * Math.PI*2* --> 7.5=75, 5=50 etc.
     ctx.clearRect(0, 0, cw, ch);
-    ctx.lineWidth = 5; //thickness of the line
-    ctx.fillStyle = '#002a7c';
-    ctx.strokeStyle = "#002a7c";
+    ctx.lineWidth = 10; //thickness of the line
+    ctx.fillStyle = '#a81047';
+    ctx.strokeStyle = "#a81047";
     ctx.textAlign = 'center';
-    ctx.font = "30px Radley";
+    ctx.font = "30px Assistant";
     ctx.fillText(al + '%', cw * .5 + 2, ch * .5 + 8, cw);
     ctx.beginPath();
     ctx.arc(60, 60, 55, start, diff / 10 + start, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
     ctx.stroke();
     if (al >= 75) { // stop the recreation at your desired point, i.e change 100 to 75 if you need just 75%.
+      clearTimeout(sim);
+      // Add scripting here that will run when progress completes
+    }
+    al++;
+  }
+  var sim = setInterval(progressSim, 50); //speed
+}
+
+/* loadSkill5 function*/
+function loadSkills5() {
+  var ctx = document.getElementById('skill5').getContext('2d');
+  var al = 0;
+  var start = 4.72;
+  var cw = ctx.canvas.width;
+  var ch = ctx.canvas.height;
+  var diff;
+
+  function progressSim() {
+    diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2); //change the arc by multiplying .. * Math.PI*2* --> 7.5=75, 5=50 etc.
+    ctx.clearRect(0, 0, cw, ch);
+    ctx.lineWidth = 10; //thickness of the line
+    ctx.fillStyle = '#a81047';
+    ctx.strokeStyle = "#a81047";
+    ctx.textAlign = 'center';
+    ctx.font = "30px Assistant";
+    ctx.fillText(al + '%', cw * .5 + 2, ch * .5 + 8, cw);
+    ctx.beginPath();
+    ctx.arc(60, 60, 55, start, diff / 10 + start, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
+    ctx.stroke();
+    if (al >= 65) { // stop the recreation at your desired point, i.e change 100 to 75 if you need just 75%.
       clearTimeout(sim);
       // Add scripting here that will run when progress completes
     }
