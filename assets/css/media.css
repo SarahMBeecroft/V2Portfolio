@@ -12,6 +12,7 @@
   }
 }
 
+
 @media (max-width: 1235px) {
   .formatPortfolio1 {
     left: 10px;
@@ -20,7 +21,12 @@
   .formatPortfolio2 {
     right: 10px;
   }
+
+  .container-fluid {
+    margin: 0 auto;
+  }
 }
+
 
 @media (max-width: 500px) {
   h5 {

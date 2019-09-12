@@ -12,6 +12,7 @@ body {
 .navbar {
   background-color: #484e58 !important;
   height: 40px;
+  z-index: 100;
 }
 
 .nav-link {
@@ -24,14 +25,33 @@ body {
   background-color: #a81047;
 }
 
+/* Makes nav bar sticky */
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* Border hover effect for header */
 .svg-wrapper {
   position: relative;
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
 	  margin: 0 auto;
   width: 320px;  
   cursor: none;
+
 }
 .shape {
   stroke-dasharray: 140 540;
@@ -54,6 +74,12 @@ body {
   stroke-width: 5px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
+}
+
+/* Adjusts "FULL STACK WEB DEVELOPER" text */
+.adjustHeader {
+  position: relative;
+  top: 36px;
 }
 
 /* Typewriter effect */
@@ -106,7 +132,7 @@ hr {
 
 .jumbotron {
   background-color: black;
-  height: 260px;
+  height: 300px;
   text-align: center;
   color: white; 
   width: auto !important;
@@ -138,7 +164,7 @@ header {
   height: 40px;
   width: 200px;
   border: 1.5px solid white;
-  margin: 20px 20px 20px 20px;
+  margin: 80px 20px 20px 20px;
   color: white;
   background-color: #a81047;
   text-decoration: none;
@@ -155,13 +181,13 @@ header {
   letter-spacing: 1px;
 }
 
-#button-2 {
+#button-1, #button-2 {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 
-#button-2 a {
+#button-1 a, #button-2 a {
   position: relative;
   transition: all .35s ease-Out;
 }
@@ -176,11 +202,11 @@ header {
   bottom: 0;
 }
 
-#button-2:hover #slide {
+#button-1:hover #slide, #button-2:hover #slide {
   left: 0;
 }
 
-#button-2:hover a {
+#button-1:hover a, #button-2:hover a {
   color: white;
 }
 
@@ -243,8 +269,9 @@ header {
 h5 {
   font-family: 'Fjalla One', sans-serif;
   color: #484e58;
-  font-size: 20px;
+  font-size: 22px;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .container-fluid {
@@ -264,11 +291,11 @@ h5 {
 }
 
 .formatPortfolio1 {
-  left: 60px;
+  left: 90px;
 }
 
 .formatPortfolio2 {
-  right: 60px;
+  right: 90px;
 }
 
 .box1 .box2 .box3 .box4 .box5 .box6 {
@@ -316,9 +343,33 @@ h5 {
 #skillHeader {
   font-family: 'Fjalla One', sans-serif;
   color: #484e58;
-  font-size: 26px;
-  padding: 10px 0px 10px 0px;
+  font-size: 22px;
+  padding: 0px 0px 10px 0px;
   text-align: center;
+}
+
+
+/* Contact */
+#emailHeader {
+  font-family: 'Fjalla One', sans-serif;
+  color: #484e58;
+  font-size: 28px;
+  margin: 60px 0px 160px 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#emailLink:link {
+color: #484e58;
+border-bottom: 1px solid #a81047;
+}
+#emailLink:visited {
+color: #a81047;
+border-bottom: 1px solid Gainsboro;
+}
+#emailLink:hover {
+color: #a81047;
+border-bottom: 1px solid #a81047;
 }
 
 
@@ -330,7 +381,7 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 75px;
+  height: 85px;
   text-align: center;
   z-index: 100;
   border-top: solid 6px #484e58;
