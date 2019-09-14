@@ -23,6 +23,7 @@ body {
 
 .nav-link:hover {
   background-color: #a81047;
+  height: 40px;
 }
 
 /* Makes nav bar sticky */
@@ -127,7 +128,8 @@ hr {
 /* Jumbotron */
 .fillIn {
   background-color: black;
-  border-bottom: solid 6px #484e58;
+  border-bottom: solid 6px #a81047;
+  outline: 2px solid #484e58;
 }
 
 .jumbotron {
@@ -384,7 +386,8 @@ border-bottom: 1px solid #a81047;
   height: 85px;
   text-align: center;
   z-index: 100;
-  border-top: solid 6px #484e58;
+  border-top: solid 6px #a81047;
+  outline: 2px solid #484e58;
 }
   
 #github {
