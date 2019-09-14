@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var url = 'portfolio.sarahbeecroft.me';
 
 app.use((req, res, next) => {
   if (req.header('x-forwarded-proto') !== 'https') {
