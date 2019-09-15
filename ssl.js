@@ -1,7 +1,9 @@
-const get = require('simple-get')
- 
-get('http://portfolio.sarahbeecroft.me', function (err, res) {
-  if (err) throw err
-  console.log(res.statusCode) // 200
-  res.pipe(process.stdout) // `res` is a stream
-})
+var sslRedirect = require('heroku-ssl-redirect');
+var express = require('express');
+var app = express();
+ 
+app.use(sslRedirect());
+ 
+app.get('/', function(req, res){
+  res.send('hello world');
+});
