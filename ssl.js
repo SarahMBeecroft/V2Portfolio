@@ -1,13 +1,3 @@
-var express = require('express');
-var app = express();
-var url = 'portfolio.sarahbeecroft.me';
-
-app.use((req, res, next) => {
-  if (req.header('x-forwarded-proto') !== 'https') {
-    res.redirect(`https://${req.header('host')}${req.url}`)
-  } else {
-    next();
-  }
-});
-
-app.use(express.static('build'));
+var sslRedirect = require('heroku-ssl-redirect');
+const app = express();
+app.use(sslRedirect());
