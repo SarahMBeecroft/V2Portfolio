@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
-    "heroku-ssl-redirect": "0.0.4"
+    "heroku-ssl-redirect": "0.0.4",
+    "simple-get": "^3.0.3"
   }
 }
