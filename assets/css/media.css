@@ -64,7 +64,21 @@
   .formatPortfolio2 {
     right: 0px;
   }
+
+  .formatPortfolio3 {
+    left: 50px;
+  }
+
   h5 {
     margin-top: 10px;
+  }
+
+  #emailHeader {
+    font-family: 'Fjalla One', sans-serif;
+    color: #484e58;
+    font-size: 28px;
+    margin: 60px 40px 160px 40px;
+    text-align: center;
+    text-decoration: none;
   }
 }
