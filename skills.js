@@ -8,13 +8,14 @@ for (var i = 0; i < doughnutArray.length; i++) {
   doughnutArray[i].arc(60, 60, 55, 4.72, 15, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
   doughnutArray[i].stroke();
 }
-window.onload = function() {
+window.onscroll = function() {
     loadSkills1();
     loadSkills2();
     loadSkills3();
     loadSkills4();
     loadSkills5();
   }
+
   /*Load skills one function*/
 function loadSkills1() {
   var ctx = document.getElementById('skill1').getContext('2d');
@@ -101,7 +102,7 @@ function loadSkills3() {
     }
     al++;
   }
-  var sim = setInterval(progressSim, 30); //speed
+  var sim = setInterval(progressSim, 40); //speed
 }
 
 /* loadSkill4 function*/
@@ -131,7 +132,7 @@ function loadSkills4() {
     }
     al++;
   }
-  var sim = setInterval(progressSim, 30); //speed
+  var sim = setInterval(progressSim, 50); //speed
 }
 
 /* loadSkill5 function*/
@@ -161,7 +162,7 @@ function loadSkills5() {
     }
     al++;
   }
-  var sim = setInterval(progressSim, 30); //speed
+  var sim = setInterval(progressSim, 60); //speed
 }
 
 
