@@ -8,7 +8,7 @@ for (var i = 0; i < doughnutArray.length; i++) {
   doughnutArray[i].arc(60, 60, 55, 4.72, 15, false); //.arc(x, y , radius, startAngle, endAngle, anticlockwise)
   doughnutArray[i].stroke();
 }
-window.onscroll = function() {
+window.onload = function() {
     loadSkills1();
     loadSkills2();
     loadSkills3();
