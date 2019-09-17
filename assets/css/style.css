@@ -52,8 +52,8 @@ body {
 	  margin: 0 auto;
   width: 320px;  
   cursor: none;
-
 }
+
 .shape {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;

@@ -2,17 +2,6 @@
 
 
 /* Portfolio */
-@media (max-width: 900px) {
-  .formatPortfolio1 {
-    left: 0px;
-  }
-  
-  .formatPortfolio2 {
-    right: 0px;
-  }
-}
-
-
 @media (max-width: 1235px) {
   .formatPortfolio1 {
     left: 10px;
@@ -27,8 +16,54 @@
   }
 }
 
+@media (max-width: 900px) {
+  .formatPortfolio1 {
+    left: 0px;
+  }
+  
+  .formatPortfolio2 {
+    right: 0px;
+  }
+}
 
 @media (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+
+  .jumbotron {
+    height: 260px;
+  }
+
+  .resumeButton {
+    float: right;
+    position: relative; 
+    display: inline-flex;
+    height: 40px;
+    width: 200px;
+    border: 1.5px solid white;
+    margin: 120px 20px 20px 20px;
+    color: white;
+    background-color: #a81047;
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .typewriter h1 {
+    display: none;
+  }
+
+  .formatPortfolio1 {
+    left: 0px;
+  }
+  
+  .formatPortfolio2 {
+    right: 0px;
+  }
   h5 {
     margin-top: 10px;
   }
