@@ -183,7 +183,7 @@
     <!-- Skills section -->
     <div class="row">
         <div class="col-12" id="centerHeader">
-            <a name="skills">
+            <a name="skills" onscroll="loadSkills1()">
                 <h3 id="skillsHeader">Check out some of my skills <i class="fas fa-arrow-down"></i></h3>
             </a>
         </div>
@@ -197,7 +197,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-2 text-center">
                         <h6 id="skillHeader">HTML</h6>
-                        <canvas id="doughnut" width="120" height="120"></canvas>
+                        <canvas id="doughnut" width="120" height="120" class=""></canvas>
                         <canvas id="skill1" width="120" height="120" class=""></canvas>
                     </div>
                     <div class="col-md-2 text-center">
@@ -273,12 +273,18 @@
 
     <!-- Links to JS -->
     <script src="skills.js"></script>
+    <script src="ssl.js"></script>
 <!-- 
     <script type="text/javascript">
         if (window.location.protocol != 'https:') {
             location.href = location.href.replace("http://", "https://");
         }
     </script> -->
+
+    <script>
+        document.getElementById("skillsHeader").onscroll = function() {loadSkills1(), loadSkills2(), loadSkills3(), loadSkills4(), loadSkills5()};
+        
+    </script>
 
 </body>
 

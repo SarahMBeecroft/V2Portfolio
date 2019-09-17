@@ -2,6 +2,12 @@
 
 
 /* Portfolio */
+@media (max-width: 1440px) {
+  .container-fluid {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1235px) {
   .formatPortfolio1 {
     left: 10px;
